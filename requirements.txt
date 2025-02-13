@@ -9,3 +9,4 @@ numpy
 requests
 tqdm
 yt-dlp
+together
