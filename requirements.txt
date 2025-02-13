@@ -1,8 +1,6 @@
 Flask
-googleapiclient.discovery 
-googleapiclient.http
-google_auth_oauthlib.flow
-google.oauth2.credentials
+google-api-python-client
+google_auth_oauthlib
 edge-tts
 moviepy
 numpy
