@@ -76,10 +76,4 @@ else:
     exit(1)
 
 # Step 7: Confirm successful upload before deleting temp files
-confirm = input("Was the upload successful? (yes/no): ").strip().lower()
-if confirm == "yes":
-    delete_temp_files()
-else:
-    print("Skipping file deletion.")
-
-print("Pipeline execution completed!")
+delete_temp_files()
