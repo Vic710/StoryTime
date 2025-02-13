@@ -1,0 +1,93 @@
+2025-02-14 01:34:52,471 - INFO - "GET /?state=gvYhHMMFgJ9uy5gQnthzJuD42BYSqB&code=4/0ASVgi3JISeBTGVVSmF-ch0AvSCnJ8w33_B-1rva1XeAUMPqs2qbghTJD-vilJW91jDssCg&scope=https://www.googleapis.com/auth/youtube.upload HTTP/1.1" 200 65
+2025-02-14 01:34:52,729 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 01:34:52,761 - INFO - Preparing video upload...
+2025-02-14 01:34:52,771 - INFO - Starting video upload...
+2025-02-14 01:35:02,881 - INFO - Upload progress: 84%
+2025-02-14 01:35:06,201 - INFO - Upload Complete! Video URL: https://youtu.be/ZfhbxwPwZ_E
+2025-02-14 01:35:10,061 - INFO - Thumbnail uploaded successfully
+2025-02-14 01:35:10,137 - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2025-02-14 01:35:10,147 - ERROR - Comment posting error: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2025-02-14 01:35:10,148 - INFO - Process completed successfully!
+2025-02-14 01:35:40,840 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 01:35:40,849 - INFO - Preparing video upload...
+2025-02-14 01:35:40,858 - INFO - Starting video upload...
+2025-02-14 01:35:50,643 - INFO - Upload progress: 84%
+2025-02-14 01:35:54,161 - INFO - Upload Complete! Video URL: https://youtu.be/8auTttYh-D0
+2025-02-14 01:35:58,196 - INFO - Thumbnail uploaded successfully
+2025-02-14 01:35:58,268 - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2025-02-14 01:35:58,268 - ERROR - Comment posting error: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2025-02-14 01:35:58,268 - INFO - Process completed successfully!
+2025-02-14 01:36:56,342 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 01:36:56,347 - INFO - Preparing video upload...
+2025-02-14 01:36:56,351 - INFO - Starting video upload...
+2025-02-14 01:37:05,233 - INFO - Upload progress: 84%
+2025-02-14 01:37:08,754 - INFO - Upload Complete! Video URL: https://youtu.be/ZDg036Pna4Y
+2025-02-14 01:37:13,713 - INFO - Thumbnail uploaded successfully
+2025-02-14 01:37:13,789 - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2025-02-14 01:37:13,790 - ERROR - Comment posting error: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2025-02-14 01:37:13,791 - INFO - Process completed successfully!
+2025-02-14 01:39:06,916 - INFO - "GET /?state=neBJ1fw3SPuQA2HFtF6RyAlYuGNLxt&code=4/0ASVgi3IL6-6rS1QlcabXwFhP7pnqmmS8izrPml9vEGDNzaEo2MOB-8HRZzX3pyrokWnVBw&scope=https://www.googleapis.com/auth/youtube.force-ssl%20https://www.googleapis.com/auth/youtube.upload HTTP/1.1" 200 65
+2025-02-14 01:39:07,183 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 01:39:07,192 - INFO - Preparing video upload...
+2025-02-14 01:39:07,198 - INFO - Starting video upload...
+2025-02-14 01:39:15,916 - INFO - Upload progress: 84%
+2025-02-14 01:39:19,302 - INFO - Upload Complete! Video URL: https://youtu.be/mbkvmOutVfc
+2025-02-14 01:39:23,471 - INFO - Thumbnail uploaded successfully
+2025-02-14 01:39:24,251 - INFO - Process completed successfully!
+2025-02-14 01:44:57,505 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 01:44:57,515 - INFO - Preparing video upload...
+2025-02-14 01:44:57,520 - INFO - Starting video upload...
+2025-02-14 01:45:06,951 - INFO - Upload progress: 84%
+2025-02-14 01:45:10,497 - INFO - Upload Complete! Video URL: https://youtu.be/hvHgItG5s2I
+2025-02-14 01:45:14,606 - INFO - Thumbnail uploaded successfully
+2025-02-14 01:45:15,608 - INFO - Process completed successfully!
+2025-02-14 02:06:25,556 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 02:06:25,564 - ERROR - Fatal error: Video file not found: final_output.mp4
+Traceback (most recent call last):
+  File "C:\Users\Shlok2\OneDrive\Desktop\PROJECTS\SleepStoryYT\upload.py", line 178, in main
+    upload_video(youtube, title, VIDEO_FILENAME, THUMBNAIL_FILENAME)
+  File "C:\Users\Shlok2\OneDrive\Desktop\PROJECTS\SleepStoryYT\upload.py", line 59, in upload_video
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+FileNotFoundError: Video file not found: final_output.mp4
+2025-02-14 02:28:46,843 - ERROR - This script is meant to be run from main.py with a title argument.
+2025-02-14 02:34:57,796 - INFO - Received title from main.py: Soothing Sleep Story & Cozy Music for Deep Relaxation
+2025-02-14 02:34:57,796 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 02:34:57,807 - ERROR - Fatal error: Video file not found: final_output.mp4
+Traceback (most recent call last):
+  File "C:\Users\Shlok2\OneDrive\Desktop\PROJECTS\SleepStoryYT\upload.py", line 176, in main
+    upload_video(youtube, title, VIDEO_FILENAME, THUMBNAIL_FILENAME)
+  File "C:\Users\Shlok2\OneDrive\Desktop\PROJECTS\SleepStoryYT\upload.py", line 60, in upload_video
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+FileNotFoundError: Video file not found: final_output.mp4
+2025-02-14 02:35:53,804 - INFO - Received title from main.py: Soothing Sleep Story & Cozy Music for Deep Relaxation
+2025-02-14 02:36:02,474 - INFO - "GET /?state=L50d9muwCfTIYMZHd6bR1HiKaw7XMi&code=4/0ASVgi3I5zMQE7YxgSr7AXb2d6UIEdQfAKFv6n7Lr7C4IvTgACjSoN4g2jtCHt6biDiLKEg&scope=https://www.googleapis.com/auth/youtube.force-ssl%20https://www.googleapis.com/auth/youtube.upload HTTP/1.1" 200 65
+2025-02-14 02:36:02,679 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 02:36:02,688 - INFO - Preparing video upload...
+2025-02-14 02:36:02,703 - INFO - Starting video upload...
+2025-02-14 02:36:13,550 - INFO - Upload progress: 84%
+2025-02-14 02:36:17,253 - INFO - Upload Complete! Video URL: https://youtu.be/P6zimeldJRM
+2025-02-14 02:36:21,681 - INFO - Thumbnail uploaded successfully
+2025-02-14 02:36:22,728 - INFO - Process completed successfully!
+2025-02-14 02:43:43,626 - INFO - Received title from main.py: Soothing Sleep Story & Cozy Music for Deep Relaxation | A Moonlit Valley's Whispered Secrets
+2025-02-14 02:43:43,670 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 02:43:43,675 - INFO - Preparing video upload...
+2025-02-14 02:43:43,680 - INFO - Starting video upload...
+2025-02-14 02:43:54,229 - INFO - Upload Complete! Video URL: https://youtu.be/EcrI7XawkRU
+2025-02-14 02:43:58,328 - INFO - Thumbnail uploaded successfully
+2025-02-14 02:43:59,304 - INFO - Comment posted: Close your eyes, breathe deeply, and let this soothing tale carry you into restful sleep. 
+2025-02-14 02:43:59,305 - INFO - Process completed successfully!
+2025-02-14 02:53:19,498 - INFO - Received title from main.py: Soothing Sleep Story & Cozy Music for Deep Relaxation | A Moonlit Grove's Gentle Embrace
+2025-02-14 02:53:19,498 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 02:53:19,504 - INFO - Preparing video upload...
+2025-02-14 02:53:19,509 - INFO - Starting video upload...
+2025-02-14 02:53:33,689 - INFO - Upload Complete! Video URL: https://youtu.be/vIqj0EVftpU
+2025-02-14 02:53:38,524 - INFO - Thumbnail uploaded successfully
+2025-02-14 02:53:39,542 - INFO - Comment posted: Drift away into a world of calm and serenity. Sleep well, dream beautifully. 
+2025-02-14 02:53:39,542 - INFO - Process completed successfully!
+2025-02-14 03:12:02,978 - INFO - Received title from main.py: Soothing Sleep Story & Cozy Music for Deep Relaxation | Whispered Dreams Under Moonlit Skies
+2025-02-14 03:12:02,984 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-14 03:12:02,991 - INFO - Preparing video upload...
+2025-02-14 03:12:02,994 - INFO - Starting video upload...
+2025-02-14 03:12:19,599 - INFO - Upload Complete! Video URL: https://youtu.be/-IXOXR7hBH8
+2025-02-14 03:12:20,549 - INFO - Comment posted: If you find peace in these stories, consider subscribing for more dreamy nights.
+2025-02-14 03:12:20,550 - INFO - Process completed successfully!

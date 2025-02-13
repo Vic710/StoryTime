@@ -1,0 +1,34 @@
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
+
+# Load model and tokenizer
+model_name = "google/gemma-2b"
+tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=True)
+model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype=torch.float16, use_auth_token=True)
+
+# Improved Prompt
+prompt = (
+    "Write a completely original, calming bedtime story about a little star named Twinkle "
+    "who helps lost travelers find their way home. The story should be gentle, soothing, "
+    "and perfect for bedtime. Avoid referencing any real-world organizations or existing books."
+)
+
+# Tokenize input (avoiding system contamination)
+input_ids = tokenizer(prompt, return_tensors="pt", add_special_tokens=False).to("cuda")
+
+# Generate a longer story with better randomness
+outputs = model.generate(
+    **input_ids,
+    max_new_tokens=1500,  # Increase token length
+    temperature=0.8,  # A bit more creativity
+    top_p=0.9,  # Sampling control
+    do_sample=True
+)
+
+story = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+# Save story to a file
+with open("story.txt", "w", encoding="utf-8") as f:
+    f.write(story)
+
+print("Story successfully saved to story.txt!")
