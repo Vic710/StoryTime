@@ -6,7 +6,7 @@ import ffmpeg
 bg_video = "BGVid.mp4"
 audio_file = "audio.mp3"
 output_video = "final_video.mp4"
-
+ffmpeg_path = "/usr/bin/ffmpeg"
 # Get duration of the audio file
 audio_duration = MP3(audio_file).info.length
 
@@ -16,12 +16,12 @@ trim_length = audio_duration * 2
 # Trim background video
 trimmed_video = "TrimmedBGVid.mp4"
 subprocess.run([
-    "ffmpeg", "-y", "-i", bg_video, "-t", str(trim_length), "-c:v", "libx264", "-preset", "fast", "-c:a", "aac", trimmed_video
+    ffmpeg_path, "-y", "-i", bg_video, "-t", str(trim_length), "-c:v", "libx264", "-preset", "fast", "-c:a", "aac", trimmed_video
 ])
 
 # Merge the trimmed video with audio, adjusting volumes
 subprocess.run([
-    "ffmpeg", "-y", "-i", trimmed_video, "-i", audio_file, 
+    ffmpeg_path, "-y", "-i", trimmed_video, "-i", audio_file, 
     "-filter_complex",
     "[0:a]volume=0.7[a1];"  # Reduce background volume
     "[1:a]adelay=0|0[a2];"  # Sync audio.mp3
