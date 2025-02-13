@@ -1,6 +1,29 @@
 import subprocess
 from mutagen.mp3 import MP3
 
+try:
+    subprocess.run(["ffmpeg", "-version"], check=True)
+    print("✅ FFmpeg is installed and accessible!")
+except FileNotFoundError:
+    print("❌ FFmpeg is NOT installed or not found in PATH!")
+    exit(1)
+
+# Your existing command
+import subprocess
+
+# Check if FFmpeg is installed
+try:
+    subprocess.run(["ffmpeg", "-version"], check=True)
+    print("✅ FFmpeg is installed and accessible!")
+except FileNotFoundError:
+    print("❌ FFmpeg is NOT installed or not found in PATH!")
+    exit(1)
+
+# Your existing command
+subprocess.run([
+    "ffmpeg", "-i", "input.mp4", "-filter:v", "scale=1280:720",
+    "-c:v", "libx264", "-preset", "slow", "-crf", "22", "output.mp4"
+], check=True)
 # File names
 bg_video = "BGVid.mp4"
 audio_file = "audio.mp3"
